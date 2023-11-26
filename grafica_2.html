@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafica MQTT</title>
+    <link rel="stylesheet" href="/pagina_mqtt/css/grafica2.css">
+    <link rel="stylesheet" href="/pagina_mqtt/css/agua.css">
+    <link rel="stylesheet" href="/pagina_mqtt/css/movement.css">
+</head>
+
+<div>
+    <header class="header">
+        <a href="#" class="Titulo">Datos MQTT</a>
+
+        <nav class="navbar">
+            <a href="/pagina_mqtt/index.html">Inicio</a>
+        </nav>
+
+    </header>
+
+<section class="Inicio">
+    <h1>Datos:</h1>
+    <!--A qui va los datos de la tabla-->
+    <meta charset="UTF-8">
+    <title>Gráfica de Porcentaje de Agua</title>
+    <!--<link rel="stylesheet" href="/css/agua.css"> -->
+    <div class="Home">
+    </div>
+    <title>Estado de puerta</title>
+</section> 
+
+<!--Nivel de agua-->
+
+<div class="chart">
+    <div class="water-level" id="waterLevel"></div>
+    </div>
+    <input type="number" id="percentageInput" placeholder="Ingrese porcentaje">
+    <button onclick="updateWaterLevel()">Actualizar</button><p></p>
+
+
+
+<!--<h2>
+    <img src="/Graficas/Icons/Hora.png">
+</h2>
+<p>Hora: </p>
+<h3>
+    <img src="/Graficas/Icons/Fecha.png">
+</h3>-->
+<img src="/pagina_mqtt/img/Hora.png"><p2>Fecha y Hora:</p2> 
+<div class="fecha-hora">
+    <span id="fecha"></span>
+    <span id="hora"></span>
+  </div>
+
+<!--este es el del movimiento-->
+<div class="switch-container">
+    <div class="left-container">
+        
+        <img src="/pagina_mqtt/img/Sensor.png">
+        <!--<p1>Sensor</p1>-->
+        <input type="checkbox" class="switch" id="movimientoOb">
+        <label for="movimientoOb" class="switch-label" id="movimientoSensor"></label>
+
+        <img src="/pagina_mqtt/img/Puerta.jpg">
+        <!--<p2>Puerta</p2>-->
+        <input type="checkbox" class="switch" id="puertaOb">
+        <label for="puertaOb" class="switch-label" id="puertaSensor"></label>
+    </div>
+
+    <div class="right-container">
+        <img src="/pagina_mqtt/img/Luz.png">
+        <!--<p3>Luz</p3>-->
+        <input type="checkbox" class="switch" id="luzOb">
+        <label for="luzOb" class="switch-label" id="luzSensor"></label>
+        <img src="/pagina_mqtt/img/Ventana.png">
+        <!--<p4>Ventana</p4>-->
+        <input type="checkbox" class="switch" id="ventanaOb">
+        <label for="ventanaOb" class="switch-label" id="ventanaSensor"></label>
+    </div>
+</div>
+
+<script src="/pagina_mqtt/scripts/agua.js"></script>
+<!--<script src="/Graficas/"></script>-->
+<script src="/pagina_mqtt/scripts/movement.js"></script>
+
+</body>
+</html>
+

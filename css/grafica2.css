@@ -1,0 +1,147 @@
+body {
+    background: linear-gradient(to right, #23354d, #6669ff);
+    height: 100vh;
+    margin: 0;
+    color: aliceblue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 20px ;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Titulo {
+    font-size: 20px;
+    color: #e5eaee;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+h1 {
+    position: absolute;
+    top: 100px; 
+    left: 20%; 
+    transform: translateX(-50%);
+}
+.navbar a {
+    font-size: 20px;
+    color: #e5eaee;
+    text-decoration: none;
+    font-weight: 200;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: rgba(0, 0, 0, 0.986);
+}
+
+.Inicio {
+ height: 40vh;
+ left: 90%;
+ display: flex;
+ align-items: center;
+ padding: 0 10%;
+}
+
+.Home img {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20%;
+   }
+
+.door-status {
+    width: 200px;
+    height: 20px;
+    background-color: green;
+    transition: background-color 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+img {
+    max-width: 70px;
+    top: 34%;
+    
+    right: 13%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.chart {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  left: 10%;
+  top: 75%;
+  position: absolute;
+  overflow: hidden;
+  animation: caida 2s linear infinite;
+}
+
+.water-level {
+  position: absolute;
+    left: 25%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(106, 195, 247);
+  transition: height 0.5s ease-in-out;
+}
+
+input[type="number"] {
+  position: relative;
+  top: -10%;
+  margin-top: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  left: 25%;
+  position: relative;
+  top: -10%;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fecha-hora {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fecha {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .hora {
+    font-size: 14px;
+  }
